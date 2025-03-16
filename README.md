@@ -1,1 +1,6 @@
-My implementation of a singly-linked list
+My implementation of differnet data structures
+
+Completed:
+-singly linked list
+
+
