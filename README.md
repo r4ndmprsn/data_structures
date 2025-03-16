@@ -1,6 +1,6 @@
 My implementation of differnet data structures
 
 Completed:
--singly linked list
-
+- singly linked list
+- stack
 
