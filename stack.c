@@ -29,7 +29,7 @@ struct Node* create_node(int data){
     return new_node;
 }
 bool is_empty(struct Stack* stack){
-    if(stack == NULL){
+    if(stack->top == NULL){
         return true;
     }
     return false;
@@ -84,17 +84,19 @@ void free_stack(struct Stack* stack){
 }
 int main(){
     struct Stack* stack = create_stack();
+    printf("%d\n", is_empty(stack));
     push(stack, 1);
     printf("%d\n",peak(stack));
     push(stack, 2);
     printf("%d\n",peak(stack));
     push(stack, 3);
+    printf("%d\n", is_empty(stack));
     printf("%d\n",peak(stack));
     printf("%d\n",pop(stack));
     printf("%d\n",pop(stack));
     printf("%d\n",pop(stack));
     printf("%d\n",pop(stack));
-
+    
     free_stack(stack);
     return 0;
 }
