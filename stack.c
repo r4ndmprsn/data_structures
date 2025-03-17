@@ -63,7 +63,7 @@ int pop(struct Stack* stack){
 //returns the data from a node from the top of the stack
 int peak(struct Stack* stack){
     if(stack->top == NULL){
-        printf("ERROR: stack is already empty");
+        printf("ERROR: stack is empty");
         return -1;
     }
     return stack->top->data; 
